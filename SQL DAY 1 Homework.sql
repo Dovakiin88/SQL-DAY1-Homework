@@ -3,11 +3,15 @@ select last_name, first_name
 from actor a 
 where last_name like 'Wahlberg';
 
+--2 customers
+
 --Question 2
 select amount, count(amount) 
 from payment p 
 where amount >= 3.99 and amount <= 5.99
 group by amount; 
+
+  --3273
 
 --Question 3
 select film_id, count(film_id)  
@@ -46,6 +50,7 @@ group by staff_id
 select count(distinct district)
 from address a;
 
+  --378
 
 --Question 7
 select film_id, count(film_id) 
